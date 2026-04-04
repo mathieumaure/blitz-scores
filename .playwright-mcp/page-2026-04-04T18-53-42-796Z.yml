@@ -1,0 +1,52 @@
+- generic [ref=e2]:
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - button "☰" [ref=e34] [cursor=pointer]
+      - heading "♠ Blitz Score ♥" [level=1] [ref=e35]
+      - button "📋" [ref=e36] [cursor=pointer]
+    - table [ref=e39]:
+      - rowgroup [ref=e40]:
+        - row "# Alice Bob Charlie" [ref=e41]:
+          - columnheader "#" [ref=e42]
+          - columnheader "Alice" [ref=e43]
+          - columnheader "Bob" [ref=e44]
+          - columnheader "Charlie" [ref=e45]
+      - rowgroup [ref=e46]:
+        - row "Total 0 0 0" [ref=e47]:
+          - cell "Total" [ref=e48]
+          - cell "0" [ref=e49]
+          - cell "0" [ref=e50]
+          - cell "0" [ref=e51]
+    - button "+" [ref=e52] [cursor=pointer]
+  - generic [ref=e54]:
+    - generic [ref=e201]:
+      - generic [ref=e202]: Manche 1
+      - button "×" [ref=e203] [cursor=pointer]
+    - generic [ref=e204]: 3 / 3
+    - generic [ref=e205]: Charlie
+    - generic [ref=e206]: "-"
+    - generic [ref=e207]:
+      - button "-10" [ref=e208] [cursor=pointer]
+      - button "-9" [ref=e209] [cursor=pointer]
+      - button "-8" [ref=e210] [cursor=pointer]
+      - button "-7" [ref=e211] [cursor=pointer]
+      - button "-6" [ref=e212] [cursor=pointer]
+      - button "-5" [ref=e213] [cursor=pointer]
+      - button "-4" [ref=e214] [cursor=pointer]
+      - button "-3" [ref=e215] [cursor=pointer]
+      - button "-2" [ref=e216] [cursor=pointer]
+      - button "-1" [ref=e217] [cursor=pointer]
+      - button "0" [ref=e218] [cursor=pointer]
+      - button "1" [ref=e219] [cursor=pointer]
+      - button "2" [ref=e220] [cursor=pointer]
+      - button "3" [ref=e221] [cursor=pointer]
+      - button "4" [ref=e222] [cursor=pointer]
+      - button "5" [ref=e223] [cursor=pointer]
+      - button "6" [ref=e224] [cursor=pointer]
+      - button "7" [ref=e225] [cursor=pointer]
+      - button "8" [ref=e226] [cursor=pointer]
+      - button "9" [ref=e227] [cursor=pointer]
+      - button "10" [ref=e228] [cursor=pointer]
+    - generic [ref=e229]:
+      - spinbutton [ref=e230]
+      - button "OK" [ref=e231] [cursor=pointer]

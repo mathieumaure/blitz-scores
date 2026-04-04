@@ -1,0 +1,52 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - button "☰" [ref=e5] [cursor=pointer]
+      - heading "♠ Blitz Score ♥" [level=1] [ref=e6]
+      - button "📋" [ref=e7] [cursor=pointer]
+    - table [ref=e10]:
+      - rowgroup [ref=e11]:
+        - row "# Alice Bob Charlie" [ref=e12]:
+          - columnheader "#" [ref=e13]
+          - columnheader "Alice" [ref=e14]
+          - columnheader "Bob" [ref=e15]
+          - columnheader "Charlie" [ref=e16]
+      - rowgroup [ref=e17]:
+        - row "Total 0 0 0" [ref=e18]:
+          - cell "Total" [ref=e19]
+          - cell "0" [ref=e20]
+          - cell "0" [ref=e21]
+          - cell "0" [ref=e22]
+    - button "+" [ref=e23] [cursor=pointer]
+  - generic [ref=e25]:
+    - generic [ref=e141]:
+      - generic [ref=e142]: Manche 1
+      - button "×" [ref=e143] [cursor=pointer]
+    - generic [ref=e144]: 2 / 3
+    - generic [ref=e145]: Bob
+    - generic [ref=e146]: "-"
+    - generic [ref=e147]:
+      - button "-10" [ref=e148] [cursor=pointer]
+      - button "-9" [ref=e149] [cursor=pointer]
+      - button "-8" [ref=e150] [cursor=pointer]
+      - button "-7" [ref=e151] [cursor=pointer]
+      - button "-6" [ref=e152] [cursor=pointer]
+      - button "-5" [ref=e153] [cursor=pointer]
+      - button "-4" [ref=e154] [cursor=pointer]
+      - button "-3" [ref=e155] [cursor=pointer]
+      - button "-2" [ref=e156] [cursor=pointer]
+      - button "-1" [ref=e157] [cursor=pointer]
+      - button "0" [ref=e158] [cursor=pointer]
+      - button "1" [ref=e159] [cursor=pointer]
+      - button "2" [ref=e160] [cursor=pointer]
+      - button "3" [ref=e161] [cursor=pointer]
+      - button "4" [ref=e162] [cursor=pointer]
+      - button "5" [ref=e163] [cursor=pointer]
+      - button "6" [ref=e164] [cursor=pointer]
+      - button "7" [ref=e165] [cursor=pointer]
+      - button "8" [ref=e166] [cursor=pointer]
+      - button "9" [ref=e167] [cursor=pointer]
+      - button "10" [ref=e168] [cursor=pointer]
+    - generic [ref=e169]:
+      - spinbutton [ref=e170]
+      - button "OK" [ref=e171] [cursor=pointer]

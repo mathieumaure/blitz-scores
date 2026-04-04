@@ -1,0 +1,24 @@
+- generic [ref=e32]:
+  - generic [ref=e33]:
+    - button "☰" [ref=e34] [cursor=pointer]
+    - heading "♠ Blitz Score ♥" [level=1] [ref=e35]
+    - button "📋" [ref=e36] [cursor=pointer]
+  - table [ref=e39]:
+    - rowgroup [ref=e119]:
+      - row "# Alice Bob Charlie" [ref=e120]:
+        - columnheader "#" [ref=e121]
+        - columnheader "Alice" [ref=e122]
+        - columnheader "Bob" [ref=e123]
+        - columnheader "Charlie" [ref=e124]
+    - rowgroup [ref=e125]:
+      - row "M1 45 10 30" [ref=e126]:
+        - cell "M1" [ref=e127]
+        - cell "45" [ref=e128] [cursor=pointer]
+        - cell "10" [ref=e129] [cursor=pointer]
+        - cell "30" [ref=e130] [cursor=pointer]
+      - row "Total 45 10 30" [ref=e131]:
+        - cell "Total" [ref=e132]
+        - cell "45" [ref=e133]
+        - cell "10" [ref=e134]
+        - cell "30" [ref=e135]
+  - button "+" [ref=e52] [cursor=pointer]

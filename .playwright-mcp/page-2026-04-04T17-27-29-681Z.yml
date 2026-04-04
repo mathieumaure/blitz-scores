@@ -1,0 +1,42 @@
+- generic [ref=e200]:
+  - generic [ref=e201]:
+    - button "←" [ref=e202] [cursor=pointer]
+    - heading "Historique" [level=1] [ref=e203]
+  - generic [ref=e204]:
+    - generic [ref=e205]:
+      - heading "🏆 Classement global" [level=3] [ref=e206]
+      - table [ref=e208]:
+        - rowgroup [ref=e209]:
+          - row "Joueur Parties 🥇 Podiums Moy." [ref=e210]:
+            - columnheader "Joueur" [ref=e211]
+            - columnheader "Parties" [ref=e212]
+            - columnheader "🥇" [ref=e213]
+            - columnheader "Podiums" [ref=e214]
+            - columnheader "Moy." [ref=e215]
+        - rowgroup [ref=e216]:
+          - row "Bob 1 1 1 25" [ref=e217]:
+            - cell "Bob" [ref=e218]
+            - cell "1" [ref=e219]
+            - cell "1" [ref=e220]
+            - cell "1" [ref=e221]
+            - cell "25" [ref=e222]
+          - row "Charlie 1 0 1 50" [ref=e223]:
+            - cell "Charlie" [ref=e224]
+            - cell "1" [ref=e225]
+            - cell "0" [ref=e226]
+            - cell "1" [ref=e227]
+            - cell "50" [ref=e228]
+          - row "Alice 1 0 1 105" [ref=e229]:
+            - cell "Alice" [ref=e230]
+            - cell "1" [ref=e231]
+            - cell "0" [ref=e232]
+            - cell "1" [ref=e233]
+            - cell "105" [ref=e234]
+    - generic [ref=e235]:
+      - heading "📄 Parties passées" [level=3] [ref=e236]
+      - generic [ref=e237] [cursor=pointer]:
+        - generic [ref=e238]:
+          - generic [ref=e239]: 🥇 Bob
+          - generic [ref=e240]: 4 avr. 2026, 19:27
+        - generic [ref=e241]: Alice, Bob, Charlie - 2 manches
+    - button "Supprimer l'historique" [ref=e242] [cursor=pointer]

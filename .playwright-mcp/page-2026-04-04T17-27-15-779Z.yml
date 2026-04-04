@@ -1,0 +1,39 @@
+- generic [ref=e161]:
+  - heading "🏆 Fin de partie 🏆" [level=1] [ref=e162]
+  - generic [ref=e163]:
+    - generic [ref=e164]: 🚫 Alice a atteint 105 points !
+    - generic [ref=e165]:
+      - generic [ref=e166]:
+        - generic [ref=e167]:
+          - generic [ref=e168]: 🥈
+          - generic [ref=e169]: 50 pts
+        - generic [ref=e170]: Charlie
+      - generic [ref=e171]:
+        - generic [ref=e172]:
+          - generic [ref=e173]: 🥇
+          - generic [ref=e174]: 25 pts
+        - generic [ref=e175]: Bob
+      - generic [ref=e176]:
+        - generic [ref=e177]:
+          - generic [ref=e178]: 🥉
+          - generic [ref=e179]: 105 pts
+        - generic [ref=e180]: Alice
+    - generic [ref=e181]:
+      - heading "Classement" [level=3] [ref=e182]
+      - list [ref=e183]:
+        - listitem [ref=e184]:
+          - generic [ref=e185]: "1."
+          - generic [ref=e186]: Bob
+          - generic [ref=e187]: 25 pts
+        - listitem [ref=e188]:
+          - generic [ref=e189]: "2."
+          - generic [ref=e190]: Charlie
+          - generic [ref=e191]: 50 pts
+        - listitem [ref=e192]:
+          - generic [ref=e193]: "3."
+          - generic [ref=e194]: Alice
+          - generic [ref=e195]: 105 pts
+    - generic [ref=e196]:
+      - button "🔄 Rejouer (mêmes joueurs)" [ref=e197] [cursor=pointer]
+      - button "👥 Nouvelle partie" [ref=e198] [cursor=pointer]
+      - button "📋 Voir l'historique" [ref=e199] [cursor=pointer]

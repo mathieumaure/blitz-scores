@@ -1,0 +1,43 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - button "☰" [ref=e5] [cursor=pointer]
+      - heading "♠ Blitz Score ♥" [level=1] [ref=e6]
+      - button "📋" [ref=e7] [cursor=pointer]
+    - table [ref=e10]:
+      - rowgroup [ref=e11]:
+        - row "# Alice Bob Charlie" [ref=e12]:
+          - columnheader "#" [ref=e13]
+          - columnheader "Alice" [ref=e14]
+          - columnheader "Bob" [ref=e15]
+          - columnheader "Charlie" [ref=e16]
+      - rowgroup [ref=e17]:
+        - row "Total 0 0 0" [ref=e18]:
+          - cell "Total" [ref=e19]
+          - cell "0" [ref=e20]
+          - cell "0" [ref=e21]
+          - cell "0" [ref=e22]
+    - button "+" [ref=e23] [cursor=pointer]
+  - generic [ref=e25]:
+    - generic [ref=e119]:
+      - generic [ref=e120]: Récap - Manche 1
+      - button "×" [ref=e121] [cursor=pointer]
+    - list [ref=e122]:
+      - listitem [ref=e123]:
+        - generic [ref=e124]: Alice
+        - generic [ref=e125]:
+          - generic [ref=e126]: "+3"
+          - button "✎" [ref=e127] [cursor=pointer]
+      - listitem [ref=e128]:
+        - generic [ref=e129]: Bob
+        - generic [ref=e130]:
+          - generic [ref=e131]: "-2"
+          - button "✎" [ref=e132] [cursor=pointer]
+      - listitem [ref=e133]:
+        - generic [ref=e134]: Charlie
+        - generic [ref=e135]:
+          - generic [ref=e136]: "+7"
+          - button "✎" [ref=e137] [cursor=pointer]
+    - generic [ref=e138]:
+      - button "Annuler" [ref=e139] [cursor=pointer]
+      - button "Valider" [ref=e140] [cursor=pointer]

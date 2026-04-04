@@ -1,0 +1,52 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - button "☰" [ref=e5] [cursor=pointer]
+      - heading "♠ Blitz Score ♥" [level=1] [ref=e6]
+      - button "📋" [ref=e7] [cursor=pointer]
+    - table [ref=e10]:
+      - rowgroup [ref=e11]:
+        - row "# Alice Bob Charlie" [ref=e12]:
+          - columnheader "#" [ref=e13]
+          - columnheader "Alice" [ref=e14]
+          - columnheader "Bob" [ref=e15]
+          - columnheader "Charlie" [ref=e16]
+      - rowgroup [ref=e17]:
+        - row "Total 0 0 0" [ref=e18]:
+          - cell "Total" [ref=e19]
+          - cell "0" [ref=e20]
+          - cell "0" [ref=e21]
+          - cell "0" [ref=e22]
+    - button "+" [ref=e23] [cursor=pointer]
+  - generic [ref=e25]:
+    - generic [ref=e57]:
+      - generic [ref=e58]: Manche 1
+      - button "×" [ref=e59] [cursor=pointer]
+    - generic [ref=e60]: 2 / 3
+    - generic [ref=e61]: Bob
+    - generic [ref=e62]: "-"
+    - generic [ref=e63]:
+      - button "-10" [ref=e64] [cursor=pointer]
+      - button "-9" [ref=e65] [cursor=pointer]
+      - button "-8" [ref=e66] [cursor=pointer]
+      - button "-7" [ref=e67] [cursor=pointer]
+      - button "-6" [ref=e68] [cursor=pointer]
+      - button "-5" [ref=e69] [cursor=pointer]
+      - button "-4" [ref=e70] [cursor=pointer]
+      - button "-3" [ref=e71] [cursor=pointer]
+      - button "-2" [ref=e72] [cursor=pointer]
+      - button "-1" [ref=e73] [cursor=pointer]
+      - button "0" [ref=e74] [cursor=pointer]
+      - button "1" [ref=e75] [cursor=pointer]
+      - button "2" [ref=e76] [cursor=pointer]
+      - button "3" [ref=e77] [cursor=pointer]
+      - button "4" [ref=e78] [cursor=pointer]
+      - button "5" [ref=e79] [cursor=pointer]
+      - button "6" [ref=e80] [cursor=pointer]
+      - button "7" [ref=e81] [cursor=pointer]
+      - button "8" [ref=e82] [cursor=pointer]
+      - button "9" [ref=e83] [cursor=pointer]
+      - button "10" [ref=e84] [cursor=pointer]
+    - generic [ref=e85]:
+      - spinbutton [ref=e86]
+      - button "OK" [ref=e87] [cursor=pointer]

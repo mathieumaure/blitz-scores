@@ -1,0 +1,55 @@
+- generic [ref=e2]:
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - button "☰" [ref=e34] [cursor=pointer]
+      - heading "♠ Blitz Score ♥" [level=1] [ref=e35]
+      - button "📋" [ref=e36] [cursor=pointer]
+    - table [ref=e39]:
+      - rowgroup [ref=e40]:
+        - row "# Alice Bob Charlie" [ref=e41]:
+          - columnheader "#" [ref=e42]
+          - columnheader "Alice" [ref=e43]
+          - columnheader "Bob" [ref=e44]
+          - columnheader "Charlie" [ref=e45]
+      - rowgroup [ref=e46]:
+        - row "Total 0 0 0" [ref=e47]:
+          - cell "Total" [ref=e48]
+          - cell "0" [ref=e49]
+          - cell "0" [ref=e50]
+          - cell "0" [ref=e51]
+    - button "+" [ref=e52] [cursor=pointer]
+  - generic [ref=e54]:
+    - generic [ref=e55]:
+      - generic [ref=e56]: Nouvelle manche
+      - button "×" [ref=e57] [cursor=pointer]
+    - generic [ref=e58]:
+      - button "Score direct" [ref=e59] [cursor=pointer]
+      - button "Détaillé" [active] [ref=e60] [cursor=pointer]
+    - generic [ref=e61]:
+      - generic [ref=e80]:
+        - generic [ref=e81]: Alice
+        - generic [ref=e82]:
+          - spinbutton [ref=e83]
+          - generic [ref=e84]: centre
+          - spinbutton [ref=e85]
+          - generic [ref=e86]: restantes
+        - generic [ref=e87]: = 0 pts
+      - generic [ref=e88]:
+        - generic [ref=e89]: Bob
+        - generic [ref=e90]:
+          - spinbutton [ref=e91]
+          - generic [ref=e92]: centre
+          - spinbutton [ref=e93]
+          - generic [ref=e94]: restantes
+        - generic [ref=e95]: = 0 pts
+      - generic [ref=e96]:
+        - generic [ref=e97]: Charlie
+        - generic [ref=e98]:
+          - spinbutton [ref=e99]
+          - generic [ref=e100]: centre
+          - spinbutton [ref=e101]
+          - generic [ref=e102]: restantes
+        - generic [ref=e103]: = 0 pts
+    - generic [ref=e77]:
+      - button "Annuler" [ref=e78] [cursor=pointer]
+      - button "Valider" [ref=e79] [cursor=pointer]
