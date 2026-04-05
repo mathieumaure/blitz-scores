@@ -275,6 +275,9 @@
 
         .danger-cell { color: var(--red); font-weight: 800; }
 
+        .total-positive { color: var(--red); }
+        .total-negative { color: var(--green-mid); }
+
         .fab {
             position: fixed;
             bottom: 24px;
@@ -373,9 +376,9 @@
             color: white;
         }
         .seq-score-btn:active { transform: scale(0.9); }
-        .seq-score-btn.neg { background: var(--red); }
+        .seq-score-btn.neg { background: var(--green-mid); }
         .seq-score-btn.zero { background: #888; }
-        .seq-score-btn.pos { background: var(--green-mid); }
+        .seq-score-btn.pos { background: var(--red); }
         .seq-score-btn.selected {
             outline: 3px solid var(--orange);
             outline-offset: -1px;
@@ -445,8 +448,8 @@
             min-width: 40px;
             text-align: right;
         }
-        .recap-score.pos-score { color: var(--green-mid); }
-        .recap-score.neg-score { color: var(--red); }
+        .recap-score.pos-score { color: var(--red); }
+        .recap-score.neg-score { color: var(--green-mid); }
         .recap-score.zero-score { color: #888; }
 
         .recap-edit-btn {
@@ -671,6 +674,15 @@
         .podium-place:nth-child(1) { animation-delay: 0.2s; }
         .podium-place:nth-child(2) { animation-delay: 0s; }
         .podium-place:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes scoreConfirm {
+            0% { transform: scale(1); }
+            40% { transform: scale(0.85); }
+            100% { transform: scale(1); }
+        }
+        .seq-score-btn.confirmed {
+            animation: scoreConfirm 0.2s ease;
+        }
     </style>
 </head>
 <body>
@@ -862,7 +874,8 @@
             state.rounds.forEach((round, ri) => {
                 html += '<tr><td>M' + (ri + 1) + '</td>';
                 round.forEach((score, pi) => {
-                    html += '<td class="clickable" data-round="' + ri + '" data-player="' + pi + '">' + score + '</td>';
+                    const scoreCls = score > 0 ? ' total-positive' : (score < 0 ? ' total-negative' : '');
+                    html += '<td class="clickable' + scoreCls + '" data-round="' + ri + '" data-player="' + pi + '">' + score + '</td>';
                 });
                 html += '</tr>';
             });
@@ -873,6 +886,8 @@
                 let cls = '';
                 if (i === leaderIdx && state.rounds.length > 0) cls += ' leader-cell';
                 if (total >= 80) cls += ' danger-cell';
+                else if (total > 0) cls += ' total-positive';
+                else if (total < 0) cls += ' total-negative';
                 html += '<td class="' + cls.trim() + '">' + total + '</td>';
             });
             html += '</tr></tbody>';
@@ -980,9 +995,10 @@
 
             content.querySelectorAll('.seq-score-btn').forEach(btn => {
                 btn.addEventListener('click', () => {
+                    btn.classList.add('confirmed');
                     const val = parseInt(btn.dataset.val);
                     roundScores[currentPlayerIdx] = val;
-                    advanceToNext();
+                    setTimeout(() => advanceToNext(), 200);
                 });
             });
 
@@ -1163,10 +1179,11 @@
             // Full ranking
             html += '<div class="card"><h3 style="margin-bottom:12px;">Classement</h3><ul class="ranking-list">';
             ranking.forEach((r, i) => {
+                const scoreCls = r.score > 0 ? ' total-positive' : (r.score < 0 ? ' total-negative' : '');
                 html += '<li class="ranking-item">' +
                     '<span class="ranking-position">' + (i + 1) + '.</span>' +
                     '<span class="ranking-name">' + escapeHtml(r.name) + '</span>' +
-                    '<span class="ranking-score">' + r.score + ' pts</span>' +
+                    '<span class="ranking-score' + scoreCls + '">' + r.score + ' pts</span>' +
                     '</li>';
             });
             html += '</ul></div>';
